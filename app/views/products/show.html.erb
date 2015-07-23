@@ -4,7 +4,8 @@
 
 
         <div class="col-lg-6">
-          <div class="responsive center-block"> </div
+          <div class="responsive center-block"> </div>
+          <h3><%= image_tag @product.image.url(:medium) %></h3>
           <h3><%= @product.name %></h3>
           <h3><%= @product.month %></h3>
           <h3><%= @product.description %></h3>

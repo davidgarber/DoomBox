@@ -12,8 +12,8 @@ user = User.create({email: "bob@bob.com", password: "bobpass1", password_confirm
 
 projects = Product.create([
 {name: "Zombies", description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.", month: "January", image:"http://i.imgur.com/b71h32M.jpg" },
-{name: "Meteors", description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.", month: "Febuary", image:"" },
-{name: "Aliens", description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.", month: "March", image:"" },
+{name: "Meteors", description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.", month: "Febuary", image:"http://i.imgur.com/UkJJw8X.jpg" },
+{name: "Aliens", description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.", month: "March", image:"http://i.imgur.com/hEMjP3A.jpg" },
 {name: "Ebola", description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.", month: "April", image:"http://i.imgur.com/VwLZT2p.jpg" },
 {name: "Earthquakes", description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.", month: "May", image:"http://i.imgur.com/V16GzbS.jpg" },
 {name: "Fires", description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.", month: "June", image:"http://i.imgur.com/F7coKSc.jpg" },

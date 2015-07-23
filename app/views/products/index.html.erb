@@ -4,7 +4,6 @@
       	<% @products.each  do |product| %>
 	        <li class="col-lg-3">
 	        	<p><%= link_to product.month, product_path(product) %></p>
-						<a class="img-responsive center-block hidden" id="big-img"><%= image_tag product.image.url(:medium) %></a>
 	          <a class="img-responsive center-block"><%= image_tag product.image.url(:thumb) %></a>
 	          <p class="name"><%= link_to product.name, product_path(product) %></p>
 	        </li>
