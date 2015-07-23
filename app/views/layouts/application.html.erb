@@ -16,19 +16,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Doom Box</a>
+          <a class="navbar-brand" href="/">DoomBox</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Something <span class="sr-only"></span></a></li>
           </ul>
-         <ul class="nav navbar-nav navbar-right">
-            <% if !user_signed_in? %>
-            <li><%= link_to "Sign Up", new_user_registration_path %></a></li>
-            <li><%= link_to "Sign In",  new_user_session_path %></a></li>
-             <% else %>
-            <li class="session-info"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+          <ul class="nav navbar-nav navbar-right">
+            <% if current_user == nil && current_admin == nil%>
+              <li><%= link_to "", new_user_registration_path, class: "glyphicon glyphicon-user", title: "Sign Up" %></li>
+              <li><%= link_to "", new_user_session_path, class: "glyphicon glyphicon-log-in", title: "Sign In" %></li>
+              <li><%= link_to "Admin", new_admin_session_path %></li>
+            <% end %>
+            <% if current_user %>
+              <li><%= link_to '', destroy_user_session_path, method: :delete, class: "glyphicon glyphicon-log-out", title: "Sign Out" %></li>
+              <li><%= link_to '', edit_user_registration_path, class: "glyphicon glyphicon-edit", title: "Edit Profile" %></li>
+            <% end %>
+            <% if current_admin %>
+              <li><%= link_to "Console", 'admin_console_path' %></li>
+              <li><%= link_to '', destroy_admin_session_path, method: :delete, class: "glyphicon glyphicon-log-out", title: "Sign Out" %></li>
             <% end %>
           </ul>
         </div>

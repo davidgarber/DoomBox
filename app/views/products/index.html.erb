@@ -2,9 +2,10 @@
 
 				<ul class="row">
       	<% @products.each  do |product| %>
-	        <li class="col-lg-4 col-md-4 col-sm-3 col-xs-4">
+	        <li class="col-lg-3">
 	        	<p><%= link_to product.month, product_path(product) %></p>
-	          <a class="img-responsive center-block" href="#"><img alt="" src="http://placehold.it/250x250"></a>
+						<a class="img-responsive center-block hidden" id="big-img"><%= image_tag product.image.url(:medium) %></a>
+	          <a class="img-responsive center-block"><%= image_tag product.image.url(:thumb) %></a>
 	          <p class="name"><%= link_to product.name, product_path(product) %></p>
 	        </li>
 				<% end %>
