@@ -94,14 +94,24 @@ img {
   left: 50%;
 }
 
+nav.navbar.navbar-default {
+    height: 52px;
+}
+
 div.navbar-header a.navbar-brand {
   color: #A80000;
 }
 
-ul.nav.navbar-nav.navbar-right a {
+ul.nav.navbar-nav.navbar-right li a {
   color: #A80000;
 }
 
+ul.nav.navbar-nav li a {
+  color: #A80000;
+}
+li.social  {
+  padding-left:5px;
+}
 /*--show page styling --*/
 .month{
   text-align: center;
