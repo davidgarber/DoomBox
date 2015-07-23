@@ -28,9 +28,23 @@ h1.welcome-header {
 
 .jumbotrony {
   text-align: center;
+}
 
+.doom_text{
+  color: #A80000;
+}
+
+.headline_doom {
+  margin-top: -25px;
+  margin-left: -25px;
 
 }
+
+.subscribe_btn {
+  margin-top: -15px;
+  text-align: right;
+}
+
 
 .img-jumbo {
   width:100%;
@@ -79,3 +93,49 @@ img {
   top: 50%;
   left: 50%;
 }
+
+div.navbar-header a.navbar-brand {
+  color: #A80000;
+}
+
+ul.nav.navbar-nav.navbar-right a {
+  color: #A80000;
+}
+
+/*--show page styling --*/
+.month{
+  text-align: center;
+
+  font-size: 53px;
+
+}
+.content-list li {
+  margin-bottom:2px;
+
+}
+.show-img {
+  border: 4px solid rgb(200, 200, 200);
+  width: 458px;
+  height: 458px
+}
+.headline {
+  text-align: center;
+  font-family: 'Creepster', cursive;
+  font-size: 73px;
+  color: #A80000;
+}
+
+.well {
+
+  border-radius: 0;
+}
+
+h3.description {
+  font-size: 21px;
+  line-height: 1.22;
+}
+
+.call-to-action {
+    padding-top: 10px;
+    margin-bottom: 1px;
+  }
