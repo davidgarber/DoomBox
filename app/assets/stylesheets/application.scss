@@ -15,3 +15,37 @@
 
 // Whatever application styles you have go last
 // @import "base";
+
+h1.welcome-header {
+  font-family: 'Creepster', cursive;
+  font-size: 83px;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.jumbotrony {
+  text-align: center;
+
+
+}
+
+.img-jumbo {
+  width:100%;
+  margin-right: -225px;
+  margin-left: -255px;
+  margin-top: -20px;
+}
+
+ul {
+  padding:0 0 0 0;
+  margin:0 0 0 0;
+      }
+ul li {
+  list-style:none;
+  margin-bottom:25px;
+}
+ul li img {
+  cursor: pointer;
+}
