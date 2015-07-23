@@ -7,7 +7,8 @@
           <div class="responsive center-block"> </div>
           <h3><%= image_tag @product.image.url(:medium) %></h3>
           <h3><%= @product.month %></h3>
-          <h3>Box Contains:</h3>
+
+            <h3><small>This</small> DoomBox <small>contains:</small></h3>
             <ul>
               <% @product.contents.each do |key, value| %>
               <%= key %><%= value %> <br>
