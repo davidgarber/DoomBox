@@ -10,7 +10,9 @@
 				<% end %>
 				</ul>
 
-<button class="btn btn-primary"><%= link_to 'Add a Product', new_product_path  %></button>
+<% if current_admin %>
+	<button class="btn btn-primary"><%= link_to 'Add a Product', new_product_path  %></button>
+<% end %>
 
 </div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
