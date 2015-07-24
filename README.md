@@ -6,14 +6,13 @@ Jocelyn Alsdorf, Jeanette Fairless, Cory Ribson, David Abel and David Garber
 
 ### Description ###
 
-This is the latest incarnation of the multi-week project to create a profile of projects that demonstrates the skills I have learned at Epicodus.
+This is DoomBox. Subscribe and Survive.
 
 
 ### Ruby version ###
 
 This was built on:
-  Ruby 2.2.0p0
-  Rails 4.2.3
+  Ruby 2.2.0p0  and  Rails 4.2.3
 
 
 ### Setup ###
@@ -59,7 +58,7 @@ Click Admin and sign in with the Admin account:
 
 ### Debugging ###
 
-If there are any bugs contact
+If there are any bugs contact David Garber...
 
 ### License ###
 This is free and unencumbered software released into the public domain.
