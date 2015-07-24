@@ -22,10 +22,11 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
           <ul class="nav navbar-nav">
             <li><%= link_to "Products", products_path %></li>
-            <li class="social"><%= image_tag "google.png"%></li>
-            <li class="social"><%= image_tag "fb.png"%></li>
-            <li class="social"><%= image_tag "stumble.png"%></li>
-            <li class="social"><%= image_tag "twitter.png"%></li>
+            <li><a href="http://doombox.launchrock.com/">Visit Launchpage!</a></li>
+            <li class="social"><a href="https://plus.google.com/explore/NUCLEARWAR" target="blank"><%= image_tag "google.png"%></a></li>
+            <li class="social"><a href="https://www.facebook.com/page.Zombies"><%= image_tag "fb.png"%></a></li>
+            <li class="social"><a href="https://twitter.com/preparednesspro"><%= image_tag "stumble.png"%></a></li>
+            <li class="social"><a href="https://twitter.com/preparednesspro"><%= image_tag "twitter.png"%></a></li>
           </ul>
 
 
@@ -48,7 +49,7 @@
       </div>
     </nav>
     <div class="container">
-    <%= flash[:notification] %>
+    <%= flash[:notice] %>
     <%= flash[:alert] %>
 
     <%= yield %>

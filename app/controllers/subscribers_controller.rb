@@ -21,7 +21,7 @@ def update
     current_user.save
 
 
-    redirect_to products_path, notice: "Your subscription was set up successfully! Happy survival!"
+    redirect_to products_path, notice: "Visit the DoomBox Launchpage at: http://doombox.launchrock.com "
 
 
 
