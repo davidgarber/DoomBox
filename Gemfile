@@ -16,7 +16,7 @@ gem 'devise'
 gem 'paperclip'
 gem 'rails_12factor', group: :production
 gem 'simple_form'
-gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'stripe'
 gem 'rails_admin'
 
 
