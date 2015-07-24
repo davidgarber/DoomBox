@@ -15,4 +15,13 @@ describe "create a new doom" do
     click_button 'Create Product'
     expect(page).to have_content 'December'
   end
+
+ it "gives an error when no name, month or decription are entered" do
+   admin = FactoryGirl.create(:admin)
+   login_as(admin, :scope => :admin)
+   visit products_path
+   click_link 'Add a Product'
+   click_button 'Create Product'
+   expect(page).to have_content 'errors'
+ end   
 end
